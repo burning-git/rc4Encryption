@@ -1,5 +1,7 @@
 # rc4Encryption-
 
+ps：网上资料大部分资料不全，或者是不能使用，因此 记录下下来方法
+
 + (NSData *)RC4Encrypt:(NSData*)srcData withKey:(NSString *)key {
     // 'key' should be 32 bytes for AES256, will be null-padded otherwise
     char keyPtr[kCCKeySizeMaxRC4+1]; // room for terminator (unused)
